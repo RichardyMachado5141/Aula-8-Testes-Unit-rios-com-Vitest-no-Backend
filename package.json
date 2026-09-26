@@ -1,0 +1,17 @@
+{
+  "name": "users-api-docker-compose",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API CRUD de usuários com Express, Prisma e PostgreSQL em Docker Compose",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "db:generate": "prisma generate",
+    "db:deploy": "prisma migrate deploy"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.0",
+    "express": "5.1.0",
+    "prisma": "6.19.0"
+  }
+}
