@@ -7,11 +7,18 @@
   "scripts": {
     "start": "node server.js",
     "db:generate": "prisma generate",
-    "db:deploy": "prisma migrate deploy"
+    "db:deploy": "prisma migrate deploy",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@prisma/client": "6.19.0",
     "express": "5.1.0",
     "prisma": "6.19.0"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^3.2.4",
+    "supertest": "^7.3.1",
+    "vitest": "^3.2.4"
   }
 }
